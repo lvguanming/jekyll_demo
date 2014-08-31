@@ -1,79 +1,272 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <html>
+ <head>
+  <title>吕管明 - 首页</title>
+  <style type="text/css">
+  html{
+	background-color: #F8F8F8;
+  }
+  body{
+	border: solid #B6B0B0 1px;
+	border-radius: 15px;
+	padding: 25px;
+	margin: 8px;
+	color: #000000;
+	background-color: #FFFFFF;
+	font-family:Georgia, serif, sans-serif;
+	text-align: justify;
+  }
+  .context{
+	background: #333;
+	border-radius: 10px;
+	background-repeat: no-repeat;
+	background-attachment:fixed;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	background-position:50% 50%; 
+	margin:0;
+	padding:0;
+	width:100%;
+	height:100%;
+	background-image:url(http://qn.image.lvgm.cn/index_bg.jpg);
+	-webkit-transition: All 2s ease;
+	-moz-transition: All 2s ease;
+	-o-transition: All 2s ease;
+	-ms-transition: All 2s ease;
+	transition: All 2s ease;
+  }
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Jekyll demo : jekyll_demo" />
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+#container{
+	padding:20px;
+	background-color:rgba(0,0,0,0.3);
+	border-radius: 18px;
+	color: #fefefe;
+	overflow: auto; 
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width:auto;
+	height:auto;
+	max-height: 70%;
+	min-width: 60%;
+	max-width: 40%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	transition: height 1s ease;
+	transition: top 1s ease;
+}
 
-    <title>Jekyll demo</title>
-  </head>
+#container p,
+#container a{
+	color: #fefefe;
+	text-shadow:0 1px 1px #333
+}
 
-  <body>
+#container a:hover{
+	color: #868686;
+	text-decoration: underline;
+}
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/lvguanming/jekyll_demo">View on GitHub</a>
+#footer {
+       border-top:1px solid #d3d3d3;
+}
 
-          <h1 id="project_title">Jekyll demo</h1>
-          <h2 id="project_tagline">jekyll_demo</h2>
+#foot-content{
+	float:right;	
+}
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/lvguanming/jekyll_demo/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/lvguanming/jekyll_demo/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
+#footer p{
+	text-align:right;
+}
+
+#footer-content a:hover{
+	background-color: #fefefe;
+	color: #222;
+}
+
+#footer-content a:hover{
+	padding: 0.3rem;
+	border-radius: 0.5em;
+}
+
+.logion{
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+#logion_text{
+	text-indent: 2em;
+	text-align: left;
+	line-height:150%;
+	font-size: 110%;
+	font-family: 'SimHei','Microsoft YaHei','STHeiti';
+	font-style: normal;
+}
+
+#logion_author{
+	text-align: right;
+	font-family: KaiTi_GB2312,BiauKai;
+	font-size: 110%;
+}
+#header{
+	border-bottom: 1px solid #d3d3d3;
+	display: relative;
+}
+
+#container h1{
+	font-size: 1.4rem;
+	line-height: 90%;
+	color: #fefefe;
+	float: none;
+	margin: auto;
+	padding-top: 0.4rem;
+	text-align: center;
+	font-weight: bolder;
+	text-shadow:0 1px 1px #333;
+}
+
+#header-content:hover h1{
+	text-decoration: underline;
+}
+
+#header-content h1:hover{
+	cursor:pointer;
+}
+
+
+#header-content p{
+	text-align: center;
+}
+
+#header-content{
+	display:block;
+	text-align: center;
+	margin: auto;
+}
+
+@media (min-width: 641px) and (max-width:770px){
+	#container{
+		min-width:80%;
+	}
+}
+@media (min-width: 400px) and (max-width:641px){
+	#container{
+		min-width:80%;
+	}
+}
+@media (min-width: 771px){
+	#container{
+		min-width:30%;
+	}
+}
+
+
+#up-arrow{
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	width: 21px;
+	height: 21px;
+	background-image: url(data:image/gif;base64,R0lGODlhFgAVALMAAGNkZuLi44CBg5SVlru8vPb29tjZ2aioqW1ucIqLjOrq6sXFxgAAAAAAAAAAAAAAACH5BAAHAP8ALAAAAAAWABUAAARBUMlJq7046837LYVnJYlIEQBAmEqQpoEpvIAgHnR6dEb+GpsCwpdChDID4muQWShpi8+ARBUIqKTBkcXter9gUwQAOw==);
+	background-color: #fefefe;
+	border-radius: 100%;
+    cursor: n-resize;
+}
+
+
+#container.folded{
+	padding-top: 0px;
+	top:15px;
+	margin-top:5px;
+	height:10px;
+	overflow:hidden;
+}
+  </style>
+ </head>
+
+ <body>
+  <div id="context" class="context">
+	<div id="container">
+        <div id="container-inner">
+			<div id="header">
+				<div id="header-inner">
+					<div id="header-content" onclick="backgroundImage();return false;">
+						<h1>吕管明的个人网站</h1>
+						<p>Lv Guanming's Personal Website</p>
+					</div>
+				</div>
+			</div>
+			<div id="content">
+                <div id="content-inner">
+                    <div id="alpha">
+						<div id="alpha-inner">
+							<div class="logion">
+								<div id="logion_text">业精于勤，荒于嬉，行成于思，毁于随。</div>
+								<div id="logion_author">——（中国）　韩愈</div>
+							</div>
+							<div id="up-arrow" style="cursor: n-resize; background-image: url(data:image/gif;base64,R0lGODlhFgAVALMAAGNkZuLi44CBg5SVlru8vPb29tjZ2aioqW1ucIqLjOrq6sXFxgAAAAAAAAAAAAAAACH5BAAHAP8ALAAAAAAWABUAAARBUMlJq7046837LYVnJYlIEQBAmEqQpoEpvIAgHnR6dEb+GpsCwpdChDID4muQWShpi8+ARBUIqKTBkcXter9gUwQAOw==);">
+							</div>
+                        </div>
+                    </div>
+				<div id="beta">
+					<div id="beta-inner"></div>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<div id="footer-inner">
+				<div id="footer-content">
+					<p><a href="about">About</a> |<a href="blog">Bolg</a> |<a href="contact">Contact</a> | © lvgm.cn</p>
+				</div>
+			</div>
+		</div>
+	</div>
     </div>
+  </div>
+<script src="http://qn.image.lvgm.cn/logion.js"></script>
+<script>
+var pub_img_current_image;
+var logion_count = arrayObj.length;
+function backgroundImage(){
+	var pub_img_path='http://7.su.bdimg.com/skin/';
+	var pub_img_num = 149;
+	var pub_img_current_no=function(count){return Math.floor(Math.random()*count+1);};
+	var pub_img_url=function(){return pub_img_path+''+pub_img_current_no(pub_img_num)+'.jpg';};
+	if (pub_img_current_image === undefined ) pub_img_current_image = pub_img_url();
+	var context = document.getElementById('context');
+	context.style.backgroundImage='url('+(pub_img_current_image=pub_img_url())+')';
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+	try{
+	var logion = arrayObj[pub_img_current_no(logion_count)];
+	document.getElementById('logion_text').innerText = unescape(logion.context);
+	document.getElementById('logion_author').innerText = unescape("%u2014%u2014"+logion.author);
+	}catch(err){}
+	
+}
+//backgroundImage();
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Jekyll demo maintained by <a href="https://github.com/lvguanming">lvguanming</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-    
-
-  </body>
+var up = document.getElementById('up-arrow');
+var upStatus = 0;
+up.addEventListener('click',function(){
+	if(upStatus === 0){
+		var container = document.getElementById('container');
+		container.setAttribute('class', 'folded');
+		up.style.backgroundImage = 'url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAYCAYAAAARfGZ1AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAN1wAADdcBQiibeAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAHZSURBVEiJ7ZQ/ixpRFMXPeY6za7IEbbS1EGysUk0TkFjkI1imShFIioVASJsqW2wT8gW2TSsypBCLBLExEBgQ2cxodDdYKBhHDZv5c1Ooi4juGsIWCXvhNo97fu+++857FBHcVKgbI9/C/z84ROQyAahMJnMvn88fAIgB2AegA4guMrJoiAC4qt2UXPU5yT3DMB6l0+kHmqYpEQkWDTAMw8u6MAxJEiIiSikEQRAdjUY/Go3G8XA4HC/rtLVTXBiG0dR1/XkqlXqo6/rPMAw535cQES67XqxRRCKz2cydTqdPVsHAhpnX6/XTyWTy0nXdLyTvRiKRO0qpGMkYyX0AeyR1klEAmud5F7ZtvyiXy+/XWdz2/AuFwv1sNnsSj8dzMi8iyXBxQkUSnuf5rVbrValUOpYNoK1uqVQqn9vt9tPxePxVKbUcC0SESin4vh82m80jx3HebgJfCQcA0zQ/2bb9zHXdbyRBUiml6Pt+4DjOu06n88ayrF/b9Nf63DTND91u99B13e+apsHzPHEc56TX6722LGtylXbrzNejWCw+TiaTR4PB4GO/3z+sVqtn12l2hudyuYNEImEEQdCs1Wrnu2h2hgNzu2y7vL+G/2n8u7/iLXxj/AYhQQQGkT/xPgAAAABJRU5ErkJggg==)';
+        up.style.cursor = 's-resize'; 
+	} else{
+		var container = document.getElementById('container');
+		container.removeAttribute('class');
+		up.style.backgroundImage = 'url(data:image/gif;base64,R0lGODlhFgAVALMAAGNkZuLi44CBg5SVlru8vPb29tjZ2aioqW1ucIqLjOrq6sXFxgAAAAAAAAAAAAAAACH5BAAHAP8ALAAAAAAWABUAAARBUMlJq7046837LYVnJYlIEQBAmEqQpoEpvIAgHnR6dEb+GpsCwpdChDID4muQWShpi8+ARBUIqKTBkcXter9gUwQAOw==)';
+        up.style.cursor = 'n-resize';
+	}
+	upStatus = ~ upStatus;
+});
+</script>
+ </body>
 </html>

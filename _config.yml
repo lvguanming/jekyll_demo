@@ -5,40 +5,49 @@ server_port: 4000
 baseurl:    /jekyll_demo
 url: http://localhost:4000
 
-source:      .
-destination: ./_site
-plugins:     ./_plugins
+permalink: /:year/:month/:day/:title.html
+paginate: 10
+markdown: redcarpet
 
-future:      true
-lsi:         false
-pygments:    false
-markdown:    maruku
-permalink:   date
+# 作者信息
+author: 
+  name: 吕管明
+  email: lvgm2013@gmail.com
+  link: http://lvgm.cn
+  weibo: http://weibo.com/lguanming
+  github: http://github.com/lvguanming
 
-maruku:
-  use_tex:    false
-  use_divs:   false
-  png_engine: blahtex
-  png_dir:    images/latex
-  png_url:    /images/latex
+# 站点信息
+title: 吕管明的网络日志 
+description: 吕管明的网络日志，记录生活的点滴。
+url: http://lvgm.cn
+rss_url: /pages/atom.xml
 
-rdiscount:
-  extensions: []
+# gavatar头像及Favicon
+gavatar: /images/gavatar.png
+favicon: /images/favicon.ico
 
-redcarpet:
-  extensions: []
+# google analytics 设置
+#ga:
+#  id: UA-43667383-1
+#  url: lvgm.cn
 
-kramdown:
-  auto_ids: true,
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  use_coderay: false
-  
-coderay:
-  coderay_wrap: div
-  coderay_line_numbers: inline
-  coderay_line_numbers_start: 1
-  coderay_tab_width: 4
-  coderay_bold_every: 10
-  coderay_css: style
+# disqus 设置
+disqus:
+  shortname: suyan-zh
+
+# 主题设置，自动激活某个标签
+active: 技术
+
+# 首页除了最新文章外显示分类
+cates: 
+  - Python
+  - OpenStack
+
+# 中文本地化
+locals:
+  tags: 标签
+  about: 关于
+  newest: 最新文章
+  archive: 归档
+  content: 目录
